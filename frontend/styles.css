@@ -20,13 +20,21 @@ header {
     width: 70%;
 }
 
-#add-task {
-    padding: 0.6em 1em;
-    cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
+.add-button {
+    background-color: #007bff;
     border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
 }
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
 
 #task-list h2 {
     margin-left: 1em;
@@ -84,20 +92,6 @@ header {
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-/* Botão de adicionar tarefa */
-.add-button {
-    padding: 15px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.add-button:hover {
-    background-color: #0056b3;
 }
 
 .task {

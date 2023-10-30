@@ -21,3 +21,15 @@ exports.addTask = function(taskData, callback) {
 exports.getTasks = function(callback) {
     db.all('SELECT * FROM tasks', [], callback);
 };
+
+// Método para excluir todas as tarefas.
+exports.deleteAllTasks = function(callback) {
+    const query = "DELETE FROM tasks";
+    db.run(query, function(error) {
+        if (error) {
+            return callback(error);
+        }
+        callback(null);
+    });
+};
+

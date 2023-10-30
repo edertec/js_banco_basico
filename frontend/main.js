@@ -71,7 +71,23 @@ function loadTasks() {
     .catch((error) => console.error("Error:", error));
 }
 
+// Botão para excluir todas as tarefas
+const deleteAllButton = document.getElementById("delete-all-tasks");
 
+// Evento para excluir todas as tarefas
+deleteAllButton.addEventListener("click", function() {
+    fetch("http://localhost:3000/delete-all-tasks", {
+        method: "DELETE"
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.message) {
+            alert(data.message);
+            loadTasks(); // Recarregar a lista de tarefas após a exclusão
+        }
+    })
+    .catch((error) => console.error("Error:", error));
+});
 
     // Carregar tarefas ao inicializar
     loadTasks();

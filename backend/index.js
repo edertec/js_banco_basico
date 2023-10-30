@@ -35,6 +35,17 @@ app.get('/list-tasks', (req, res) => {
     });
 });
 
+app.delete('/delete-all-tasks', (req, res) => {
+    db.deleteAllTasks((error) => {
+        if (error) {
+            res.status(500).json({error: 'Internal error'});
+            return;
+        }
+        res.status(200).json({message: 'All tasks deleted successfully'});
+    });
+});
+
+
 app.listen(3000, () => {
     console.log('Server started on http://localhost:3000');
 });

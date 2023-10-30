@@ -34,3 +34,16 @@ Instale o pacote sqlite3
 
 # Rode o servidor Node.js
 npm start
+
+FrontEnd
+Dê duplo clique no index.html e deverá funcionar.
+
+- BackEnd:
+Abra um terminal e navegue até a pasta backend.
+Execute npm init -y para criar um arquivo package.json. (senão tiver)
+Execute: 
+    - npm install express cors sqlite3 
+    :para instalar as dependências necessárias.
+Execute:
+    - node index.js para iniciar o servidor. 
+    :Ele deverá estar rodando em http://localhost:3000.
