@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+#task-input {
+    margin: 1em;
+}
+
+#task {
+    padding: 0.5em;
+    width: 70%;
+}
+
+#add-task {
+    padding: 0.6em 1em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+#task-list h2 {
+    margin-left: 1em;
+}
+
+#list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style based on task status */
+.status-pending {
+    background-color: #ffe0b2;
+}
+
+.status-in-progress {
+    background-color: #81d4fa;
+}
+
+.status-completed {
+    background-color: #c8e6c9;
+}
+
+/* Container geral */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Título */
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Campos do formulário */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Seleção de status */
+.status-select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botão de adicionar tarefa */
+.add-button {
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+.task {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.task-field {
+    flex: 1;
+    text-align: center;
+}
+
+/* Status Colors */
+.task-status.Pending {
+    background-color: yellow;
+    color: black;
+}
+
+.task-status.InProgress {
+    background-color: blue;
+    color: white;
+}
+
+.task-status.Completed {
+    background-color: green;
+    color: white;
+}
+  

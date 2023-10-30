@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  },
+  "name": "js_banco_basico",
+  "description": "Descrição do Projeto Este projeto é um gerenciador de tarefas desenvolvido como parte de uma  aula prática em desenvolvimento web. O projeto utiliza HTML, CSS e JavaScript para o front-end e Node.js com SQLite para o back-end.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

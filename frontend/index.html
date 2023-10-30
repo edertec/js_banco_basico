@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Task Manager</h1>
+        <form id="task-form" class="task-form">
+            <input class="input-field" type="text" id="task" placeholder="Task">
+            <input class="input-field" type="date" id="date" placeholder="Date">
+            <input class="input-field" type="text" id="responsible" placeholder="Responsible">
+            <input class="input-field" type="text" id="observations" placeholder="Observations">
+            <select class="status-select" id="status">
+                <option value="Pending">Pending</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+            </select>
+            <button type="button" class="add-button" id="add-task">Add Task</button>
+        </form>
+        <div class="task-list" id="list">
+            <!-- Task list will be populated here -->
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
